@@ -1,3 +1,4 @@
 sendy/includes/config.php
 ops/nginx/default.conf
 sendy/uploads
+docker-compose.yml
