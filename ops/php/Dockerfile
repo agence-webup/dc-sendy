@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN pecl install imagick-3.4.3
 
-RUN docker-php-ext-install -j$(nproc) mysqli mcrypt curl iconv gettext json mbstring zip \
+RUN docker-php-ext-install -j$(nproc) mysqli mcrypt curl iconv gettext mbstring zip \
     && docker-php-ext-enable imagick
 
 COPY ops/php/php.ini /usr/local/etc/php/
